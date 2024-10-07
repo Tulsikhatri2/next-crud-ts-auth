@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.toast{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.deleteButton{
+  background-color: maroon;
+  color: white;
+  padding: 1vh;
+  border-radius: 1vh;
+  margin-left: 1.3vw;
+  border: 1px solid black;
+}
+
+.dismissButton{
+  border: 1px solid gray;
+  padding: 1vh;
+  border-radius: 1vh;
+}
+
+.row-radius{
+  height: 7vh;
+  border-radius: 5vh;
+  outline: 1px solid gray;
+  margin-top: 2vh !important;
+}
+
